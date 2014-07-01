@@ -34,7 +34,7 @@
     <div class="small-12 medium-6 columns">
       <h5>How to build interactive data visualizions using d3.js</h5>
       <p>A presentation we gave at the March 2014 Philly Data meetup on creating interactive data visualizations for the web.</p>
-      <p>Topics progressed from basic considerations, design, and development using d3.js, coffeescript, and sass.</p>
+      <p>Topics progressed from basic considerations, design, and development using D3.js, Coffeescript, and SASS.</p>
       <a href="data_viz" class="button small radius">View the talk</a>
     </div>
   </div>
@@ -59,7 +59,7 @@
       <h5>Rich javascript web applications</h5>
       <p>We developed several cutting edge interactive web applications for <a href="http://one-k.com">One-K</a>, an entertainment industry creative agency.</p>
       <p>These applications needed a highly performant and rich user experience across a range of device sizes from mobile to tablet and desktops, which we accomplished through custom javascript development.</p>
-      <a href="http://work.one-k.com/" target="_blank" class="button small radius">See Examples</a>
+      <a href="http://work.one-k.com/" target="_blank" class="button small radius">See examples</a>
     </div>
   </div>
 
@@ -67,7 +67,7 @@
     <div class="small-12 medium-4 columns">
       <h5>Data mining and visualization contests</h5>
     	<p>We've applied machine learning and applied mathematics techniques to data mining contests hosted by <a href="http://www.kaggle.com" target="_blank">Kaggle</a> in order to create cutting edge models and data visualizations.</p>
-      <a href="http://www.kaggle.com/users/50679/mike-stubna" target="_blank" class="button small radius">View Kaggle Contests</a>
+      <a href="http://www.kaggle.com/users/50679/mike-stubna" target="_blank" class="button small radius">View Kaggle contests</a>
     </div>
     <div class="small-6 medium-4 columns">
       <a href="https://www.kaggle.com/c/harvard-business-review-vision-statement-prospect/prospector#120" target="_blank"><img src='images/kaggle_2.png'></a>
