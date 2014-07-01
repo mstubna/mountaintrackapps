@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "fonts";
+
+body, .button {
+  // background: #F7F7F7;
+  @include font_open_sans_regular;
+}
+
+.panel {
+  background: white;
+}
+
+a {
+  @include font_open_sans_bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font_open_sans_bold;
+}
+
+.container {
+  margin: 10px;
+}
+
+.header {
+  margin-top: 40px;
+}
+
+.footer {
+  margin-bottom: 50px;
+}
+
+.project {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 7px;
+  border: 2px solid rgba(0, 2, 93, 0.2);
+  border-radius: 3px;
+}

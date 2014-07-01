@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("fonts/OpenSans-Regular-webfont.eot");
+  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Regular-webfont.woff") format("woff"), url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url("fonts/OpenSans-Italic-webfont.eot");
+  src: url("fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Italic-webfont.woff") format("woff"), url("fonts/OpenSans-Italic-webfont.ttf") format("truetype"), url("fonts/OpenSans-Italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("fonts/OpenSans-Bold-webfont.eot");
+  src: url("fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Bold-webfont.woff") format("woff"), url("fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 4, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+.remark-container {
+  background-color: #808080; }
+
+/* line 9, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+nav #logo {
+  float: right;
+  margin-right: 20px;
+  width: 192px;
+  height: 61px;
+  background: url("../images/logo_small.png");
+  background-size: 100%; }
+
+/* line 19, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+body {
+  background: #FFF;
+  color: #4A4A4A;
+  font-family: 'open_sansregular';
+  padding: 10px;
+  max-width: 1024px;
+  margin: auto;
+  line-height: 1.7em; }
+  /* line 28, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body a:link, body a:active, body a:hover, body a:visited {
+    text-decoration: none;
+    color: #00005D;
+    font-family: 'open_sansbold'; }
+  /* line 35, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body p, body ul, body li, body h1, body h2, body h3, body h4, body h5 {
+    max-width: 600px; }
+  /* line 39, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body li:last-child {
+    margin-bottom: 15px; }
+  /* line 43, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body img {
+    padding: 30px;
+    max-height: 100%;
+    max-width: 100%; }
+  /* line 49, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body .data_viz_example {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px; }
+    /* line 55, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body .data_viz_example .axis path, body .data_viz_example .axis line {
+      fill: none;
+      stroke: #3F3F3F;
+      shape-rendering: crispEdges; }
+    /* line 61, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body .data_viz_example .label {
+      position: absolute; }
+    /* line 65, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body .data_viz_example .x_label {
+      top: 500px;
+      left: 470px; }
+    /* line 70, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body .data_viz_example .y_label {
+      -webkit-transform-origin: 0;
+      transform-origin: 0;
+      -webkit-transform: translateX(0px) rotate(-90deg);
+      transform: translateX(0px) rotate(-90deg);
+      top: 340px;
+      left: 0px; }
+  /* line 80, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body .d3-tip {
+    margin: auto;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff; }
+  /* line 90, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body.example_1 {
+    position: relative;
+    width: 100%; }
+    /* line 94, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_1 circle {
+      fill-opacity: 0;
+      stroke: #202555;
+      stroke-width: 2px; }
+    /* line 100, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_1 #slider {
+      position: relative;
+      top: 50px;
+      width: 400px; }
+    /* line 106, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_1 #note {
+      position: relative;
+      top: 30px; }
+    /* line 111, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_1 .x_label {
+      left: 400px; }
+    /* line 112, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_1 .y_label {
+      top: 300px; }
+  /* line 117, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body.example_2 {
+    position: relative;
+    width: 100%; }
+    /* line 121, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_2 select {
+      position: absolute;
+      left: 600px; }
+    /* line 126, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_2 #activity_selector {
+      top: 530px; }
+    /* line 130, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_2 #year_selector {
+      top: 580px; }
+  /* line 136, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+  body.example_3 {
+    position: relative;
+    width: 100%; }
+    /* line 140, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_3 #button_container {
+      position: relative;
+      top: 50px;
+      left: 50px;
+      width: 100%; }
+      /* line 145, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+      body.example_3 #button_container button {
+        display: inline-block;
+        float: left;
+        width: 200px;
+        margin: 5px; }
+    /* line 154, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_3 .axis.hidden {
+      opacity: 0; }
+    /* line 159, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+    body.example_3 rect {
+      fill: #7D8198;
+      fill-opacity: 0.3;
+      stroke: #202555;
+      stroke-opacity: 0.2; }
+      /* line 164, /Users/mike/Working/philly_data/interactive_data_viz/source/stylesheets/all.css.scss */
+      body.example_3 rect:hover {
+        fill: orange;
+        fill-opacity: 1; }

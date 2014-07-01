@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("../fonts/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  background: #fafafa; }
+
+body {
+  font-family: 'open_sansregular';
+  color: #5d5d5d;
+  fill: #5d5d5d;
+  width: 1024px;
+  padding: 0;
+  margin: 0 auto;
+  background: white;
+  padding: 20px 0; }
+  body nav #logo {
+    float: right;
+    margin-right: 20px;
+    width: 192px;
+    height: 61px;
+    background: url("../images/logo_small.png");
+    background-size: 100%; }
+  body h1, body h2, body h3, body h3, body h4, body h5, body h6 {
+    font-family: 'open_sansbold';
+    color: #5d5d5d;
+    fill: #5d5d5d;
+    margin-left: 20px;
+    margin-top: 0; }
+  body p {
+    margin-left: 20px;
+    margin-top: 0; }
+  body p, body ol, body li {
+    max-width: 500px; }
+  body a {
+    text-decoration: none;
+    font-family: 'open_sansbold';
+    color: #5d5d5d;
+    fill: #5d5d5d; }
+  body .graph_header {
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-right: 20px; }
+  body .graph_desc {
+    float: left;
+    font-style: italic;
+    color: #5f7ddb; }
+  body select, body input {
+    font-family: 'open_sansregular';
+    color: #5d5d5d;
+    fill: #5d5d5d;
+    font-size: 1rem;
+    padding: 3px 6px;
+    border: 1px solid #5d5d5d;
+    height: 30px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    outline: none;
+    margin: 10px 0; }
+  body input[type='checkbox'] {
+    top: 7px;
+    width: 30px;
+    height: 30px; }
+  body .graph_container {
+    position: relative;
+    width: 1024px;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 70px; }
+    body .graph_container .graph {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      body .graph_container .graph svg {
+        position: absolute; }
+    body .graph_container .legend {
+      position: absolute;
+      width: 150px;
+      top: 10px;
+      left: 90px;
+      background: white; }
+  body #ranking_graph_container #ranking_graph_controls #ranking_checkbox, body #ranking_graph_container #ranking_graph_controls label {
+    position: relative;
+    left: 300px;
+    margin-right: 5px; }
+  body #regional_graph_container .legend {
+    left: auto;
+    right: 0; }
+    body #regional_graph_container .legend .legend-circle {
+      fill: none;
+      stroke: rgba(50, 50, 50, 0.8);
+      stroke-width: 1.5px; }
+  body #regional_graph_container #regional_graph_legend_1 {
+    top: 20px; }
+  body #regional_graph_container #regional_graph_legend_2 {
+    top: 225px; }
+  body #regional_graph_container #regional_graph svg .circle {
+    stroke-width: 1.5px; }
+  body #regional_graph_container #regional_graph svg .overlay {
+    opacity: 0; }
+  body #regional_graph_container #regional_graph svg .boundary {
+    fill: none;
+    stroke: rgba(50, 50, 50, 0.8);
+    stroke-width: .5px; }
+  body #regional_graph_container #regional_graph svg .state-boundary, body #regional_graph_container #regional_graph svg .land {
+    fill: none;
+    stroke: #5d5d5d;
+    stroke-width: 1px; }
+  body #regional_graph_container #regional_graph svg .county-boundary {
+    fill: none;
+    stroke: #5d5d5d;
+    stroke-width: 0.5px;
+    stroke-opacity: 0.6; }
+  body #scatterplot_graph_container #scatterplot_graph svg .circle {
+    stroke: #00093e;
+    stroke-width: 1px;
+    fill: rgba(0, 0, 0, 0); }
+    body #scatterplot_graph_container #scatterplot_graph svg .circle.active {
+      stroke: orange;
+      fill: orange; }
+  body #scatterplot_graph_container #scatterplot_controls {
+    position: absolute;
+    left: 550px;
+    width: 200px; }
+  body svg .axis path, body svg .axis line {
+    fill: none;
+    stroke: #5d5d5d;
+    stroke-width: 1;
+    shape-rendering: crispEdges; }
+  body svg .axis text {
+    font-family: 'open_sansregular';
+    color: #5d5d5d;
+    fill: #5d5d5d; }
+  body .d3-tip {
+    margin: auto;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px;
+    background: rgba(50, 50, 50, 0.8);
+    color: #fff;
+    min-width: 150px;
+    max-width: 300px; }
+    body .d3-tip p {
+      margin: 0; }

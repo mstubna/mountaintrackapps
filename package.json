@@ -1,0 +1,21 @@
+{
+  "name": "mountaintrackapps",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+    "express": "3.x",
+    "ejs": "1.0.x",
+    "grunt": "0.4.x",
+    "grunt-exec": "0.4.x",
+    "grunt-contrib-coffee": "0.10.x",
+    "grunt-contrib-uglify": "0.4.x",
+    "grunt-contrib-sass": "0.7.x",
+    "grunt-contrib-watch": "0.6.x",
+    "grunt-markdown": "0.6.x",
+    "grunt-contrib-compress": "0.9.x",
+    "grunt-contrib-copy": "0.5.x",
+    "grunt-aws-s3": "0.9.x"
+  }
+}

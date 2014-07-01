@@ -1,0 +1,743 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Interactive Data Visualizations</title>
+    <script src="javascripts/jquery-2.1.0.js" type="text/javascript"></script>
+<script src="javascripts/highlight.pack.js" type="text/javascript"></script>
+<script src="javascripts/highlight_run.js" type="text/javascript"></script>
+    <link href="stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="stylesheets/default.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body class="meetup_notes">
+    <nav><a href='/'><div id='logo'></div></a></nav>
+    <h1>Interactive Data Visualizations</h1>
+
+    <h3 id="examples-and-creating-your-own">examples and creating your own</h3>
+
+<p>Mike Stubna, PhD<br />
+12 March 2014  </p>
+
+<p>Notes from the <a href="http://www.meetup.com/DataPhilly/events/168747852/">Data Philly meetup</a><br />
+<a href="./">Go back to the main page</a>  </p>
+
+<hr />
+
+<p><a href="https://www.google.com/search?q=data+visualizations&amp;num=50"><image src="images/visualizations.png"></image></a></p>
+
+<h3 id="data-visualizations">Data Visualizations</h3>
+<ul>
+  <li>The words 'data visualization' cover a huge variety of different things, targeting different audiences and serving different purposes.</li>
+  <li>Things to consider: audience, deployment, story</li>
+  <li>National Geographic - older, less technical audience. Often focus on narrative, artistry.</li>
+  <li>NY Times, data-heavy, younger more technical audience. Often focus on exploring data and meaning.</li>
+  <li>Scientific publications - most technical audience.</li>
+</ul>
+
+<p><img src="images/national_geographic_1.jpg" /></p>
+
+<p>From: National Geographic</p>
+
+<p><img src="images/national_geographic_2.jpg" /></p>
+
+<p>From: National Geographic</p>
+
+<hr />
+
+<h3 id="considerations">Considerations</h3>
+
+<p>Jonathan Corum, who designs visualizations for the NY Times, says to know your audience and <a href="http://style.org/tapestry/">design for them</a></p>
+
+<p>potential design ranges:</p>
+
+<ul>
+  <li>oversimplification &#8212; overwhelming detail</li>
+  <li>explanation &#8212; decoration</li>
+  <li>storytelling &#8212; interactivity</li>
+</ul>
+
+<hr />
+
+<p><a href="http://www.nytimes.com/interactive/2013/10/02/us/uninsured-americans-map.html"><image src="images/ny_times_2.png"></image></a></p>
+
+<p>From the NY Times: <a href="http://www.nytimes.com/interactive/2013/10/02/us/uninsured-americans-map.html">Where poor and uninsured Americans live</a></p>
+
+<ul>
+  <li>interactivity allows user to focus on regions of interest to them</li>
+</ul>
+
+<p><a href="http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html"><image src="images/decision_tree.png"></image></a></p>
+
+<p>From the NY Times: <a href="http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html">512 paths to the White House</a></p>
+
+<ul>
+  <li>easy to use interactivity that allows the user to explore a decision tree without even knowing what one is</li>
+</ul>
+
+<hr />
+
+<p><a href="http://www.nytimes.com/interactive/science/space/keplers-tally-of-planets.html"><image src="images/ny_times_1.png"></image></a></p>
+
+<p>From the NY Times: <a href="http://www.nytimes.com/interactive/science/space/keplers-tally-of-planets.html">Keplers tally of planets</a></p>
+
+<p><a href="http://style.org/visualized/"><image src="images/jonathan_corum.png"></image></a></p>
+
+<p>From <a href="http://style.org/visualized/">http://style.org/visualized/</a></p>
+
+<h3 id="jonathan-corum-says-about-his-development-thought-processhttpstyleorgvisualized">Jonathan Corum <a href="http://style.org/visualized/">says about his development thought process</a>:</h3>
+<ul>
+  <li>he wanted to avoid just "counting"</li>
+  <li>he wanted to avoid elaborate encodings - don't create a language that readers have to decipher</li>
+  <li>a goal was to make it intuitive even without looking at the key</li>
+  <li>visualizations don't equal explanations</li>
+</ul>
+
+<p>When he reran his script, he discovered new things about the data set, because of the visualization</p>
+
+<hr />
+
+<h3 id="common-themes-from-these-interactive-data-visualizations">Common themes from these interactive data visualizations</h3>
+<ul>
+  <li>Allows the user to explore and focus on what they are interested in</li>
+  <li>Allows the user to make discoveries that are meaningful to them</li>
+  <li>The semblance of comprehensiveness can be appealing, but so can simplicity</li>
+</ul>
+
+<h3 id="where-they-could-be-used">Where they could be used</h3>
+<ul>
+  <li>Presentations of complex data sets</li>
+  <li>Interfaces of apps that enable users to make data-driven decisions</li>
+</ul>
+
+<hr />
+
+<h3 id="animation">Animation</h3>
+
+<p>how much is &#8230;</p>
+
+<p><a href="http://www.facebook.com/paper"><image src="images/paper.png"></image></a></p>
+
+<p>too much?</p>
+
+<p><a href="http://www.imore.com/ios-7-and-motion-sickness-poll"><image src="images/reduce_motion.jpg"></image></a></p>
+
+<h3 id="is-interactivity-always-helpful">Is interactivity always helpful?</h3>
+<ul>
+  <li><a href="http://www.facebook.com/paper">Facebook paper</a> is a recent example of UX design that makes use of <a href="http://techcrunch.com/2014/02/04/hands-on-with-facebook-paper/">delightful animations</a></li>
+  <li>Apple's introduction of motion and animation in their iOS7 redesign has been <a href="http://www.imore.com/ios-7-and-motion-sickness-poll">causing motion sickness for some people</a></li>
+  <li>Interactivity can expand the possibilities of how to present the data, but should be considered carefully.</li>
+  <li>It can enhance the narrative and user understanding of the data, but gratuitous animations can be distracting.</li>
+</ul>
+
+<hr />
+
+<p><a href="http://en.wikipedia.org/wiki/Charles_Joseph_Minard"><image src="images/minard.png"></image></a></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Charles_Joseph_Minard">Charles Minard's map of Napoleon's Russian campaign of 1812</a></p>
+
+<h3 id="are-animations-necessary">Are animations necessary?</h3>
+<ul>
+  <li>If you <em>can</em> present all the data clearly without animations, it's probably better to do so. See, for example: <a href="http://en.wikipedia.org/wiki/Charles_Joseph_Minard">Charles Mendard's</a> flow map of Napoleon's disastrous Russian campaign of 1812. Considered by Edward Tufte to be the best infographic ever. Six variables shown:
+    <ul>
+      <li>size of army</li>
+      <li><code>x</code> and <code>y</code> coordinates and direction of travel</li>
+      <li>time</li>
+      <li>temperature</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="workflow">Workflow</h3>
+
+<p>As data scientists, we are very comfortable using Python, MATLAB, R, etc., for</p>
+
+<ul>
+  <li>rapid iteration of analysis, exploration, model fitting, static graphs</li>
+  <li>developing scripts to load/scrub/export data</li>
+</ul>
+
+<p>It would be ideal to have a similarly flexible framework for rapidly iterating on developing data visualizations</p>
+
+<ul>
+  <li>easily map cleaned data into engaging graphics</li>
+  <li>quickly change style, presentation, structure of visualizations</li>
+  <li>automate the workflow as much as possible, from raw data to final visualization</li>
+</ul>
+
+<hr />
+
+<h3 id="why-build-visualizations-for-the-web">Why build visualizations for the web?</h3>
+
+<ul>
+  <li>Maximal impact - can provide an easily accessible cross platform experience</li>
+  <li>Rich set of tools and libraries available, many open-source, continually evolving</li>
+  <li>Large collaborative community built around web technology and design</li>
+</ul>
+
+<hr />
+
+<h3 id="basic-components-of-a-web-document">Basic components of a web document</h3>
+<ul>
+  <li><code>html</code>, provides the structure of the document.</li>
+  <li><code>css</code>, how styles are applied.</li>
+  <li><code>javascript</code> typically provides the interactivity, but is also used to modify the structure and the styling.</li>
+</ul>
+
+<hr />
+
+<p><a href="http://d3js.org"><image src="images/d3.png"></image></a></p>
+
+<h3 id="what-is-d3">What is D3?</h3>
+<ul>
+  <li>D3 is an open-source javascript library for creating data visualizations for the web.</li>
+  <li>At it's core, D3 provides a "user-friendly" interface for binding properties of SVG elements to data properties. For example, with one function call you can draw a circle for each country, the area of which is proportional to the country's population size.</li>
+  <li>In addition to basic SVG shapes, D3 provides interfaces for <a href="https://github.com/mbostock/d3/wiki/SVG-Shapes">more complex elements</a>, such as areas, arcs, symbols.</li>
+  <li>D3 provides functions for generating common graph components: scales, axes, transitions, delays, user events.</li>
+  <li>D3 provides helper functions for doing common tasks, such as calculating the positions of elements in a stacked bar chart, or mapping geographical data onto different projections.</li>
+</ul>
+
+<hr />
+
+<h3 id="advantages-of-d3">Advantages of D3</h3>
+
+<ul>
+  <li>maximally flexible</li>
+  <li>extension over configuration</li>
+  <li>large open-source community</li>
+  <li>large libraries of examples and tutorials</li>
+</ul>
+
+<h3 id="disadvantages">Disadvantages</h3>
+
+<ul>
+  <li>maximally flexible - it can be more difficult to use than some simplified high-level chart libraries</li>
+  <li>programming in javascript can be painful, but coffeescript helps to eliminate much of the pain</li>
+</ul>
+
+<hr />
+
+<h3 id="basic-graphical-elements-svg">Basic graphical elements: SVG</h3>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element">Basic SVG elements for drawing</a>: rect, ellipse, circle, line, text, polygon.</li>
+  <li><a href="http://www.w3.org/TR/SVG11/shapes.html">SVG shape attributes</a> can be set through html or javascript</li>
+</ul>
+
+<svg width="300" height="200">
+  <rect x="50" y="50" width="200" height="100" fill="orange" stroke="navy" stroke-width="10" />
+</svg>
+
+<pre><code>    &lt;svg width="300" height="200"&gt;
+      &lt;rect x="50" y="50" width="200" height="100" fill="orange" stroke="navy" stroke-width="10"/&gt;
+    &lt;/svg&gt;
+</code></pre>
+
+<svg width="300" height="200">
+  <g transform="translate(100,50) rotate(30) scale(0.5)">
+    <rect x="50" y="50" width="100" height="100" fill="none" stroke="navy" stroke-width="10" />
+    <rect x="200" y="50" width="100" height="100" fill="none" stroke="navy" stroke-width="10" />
+  </g>
+</svg>
+
+<pre><code>    &lt;svg width="300" height="200"&gt;
+      &lt;g transform="translate(100,50) rotate(30) scale(0.5)"&gt;
+        &lt;rect x="50" y="50" width="100" height="100" fill="none" stroke="navy" stroke-width="10"/&gt;
+        &lt;rect x="200" y="50" width="100" height="100" fill="none" stroke="navy" stroke-width="10"/&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+</code></pre>
+
+<svg width="300" height="200">
+  <ellipse cx="150" cy="100" rx="60" ry="30" fill="none" stroke="navy" stroke-width="5" />
+</svg>
+
+<pre><code>    &lt;svg width="300" height="200"&gt;
+      &lt;ellipse cx="150" cy="100" rx="60" ry="30" fill="none" stroke="navy" stroke-width="5"  /&gt;
+    &lt;/svg&gt;
+</code></pre>
+
+<h3 id="how-to-build-visualizations-for-the-web">How to build visualizations for the web</h3>
+
+<ul>
+  <li>The basic concept is to map properties of your data set into the properties of svg objects on the screen.</li>
+</ul>
+
+<hr />
+
+<h3 id="higher-level-languages">Higher level languages</h3>
+
+<image src="images/coffee.png" />
+
+<h4 id="coffeescripthttpcoffeescriptorg"><a href="http://coffeescript.org/"><code>Coffeescript</code></a></h4>
+
+<p>compiles to <code>javascript</code> but has</p>
+
+<ul>
+  <li>saner class structure  </li>
+  <li>cleaner syntax  </li>
+  <li>shortcuts for common structures</li>
+</ul>
+
+<h4 id="scsshttpsass-langcom"><a href="http://sass-lang.com/"><code>SCSS</code></a></h4>
+
+<p>compiles to <code>css</code> but permits</p>
+
+<ul>
+  <li>classes</li>
+  <li>functions, variables, calculations</li>
+</ul>
+
+<hr />
+
+<h3 id="data">Data</h3>
+<ul>
+  <li><a href="http://json.org">JSON</a> (javascript object notation) is a way of representing data in a text format that can be read by all web browsers.</li>
+  <li>
+    <p><code>json</code> is made up of <code>strings</code>, <code>numbers</code>, <code>booleans</code> and two basic structures: <code>arrays</code> and <code>objects</code> aka hashes, dictionaries, etc.</p>
+
+    <pre><code>  # array
+  [ 1, 2, 3, "a", "b", "c", ["another", "array"] ]
+    
+  # object
+  { "key": "value", "a": 1, "b": false }
+</code></pre>
+  </li>
+  <li>Many languages have libraries to handle converting to/from <code>json</code> easily.</li>
+  <li>
+    <p>For data visualizations typically, make an array of objects with properties to be represented graphically.</p>
+
+    <pre><code>  [
+     {
+       "country_name": "Afghanistan", 
+       "life_expectancy": Array[52],
+       "fertility_rate": Array[52],
+       "population": Array[52]
+     },
+     { 
+       "country_name": "Albania",
+       "country_code": "ALB",
+       "life_expectancy": Array[52],
+       "fertility_rate": Array[52],
+       "population": Array[52] 
+     }
+  ]
+</code></pre>
+  </li>
+</ul>
+
+<hr />
+
+<p><a id="example_1"></a></p>
+
+<p><a href="http://www.google.com/publicdata/directory"><image src="images/life_expectancy.png"></image></a></p>
+
+<p>From Google: <a href="http://www.google.com/publicdata/directory">Google public data explorer</a></p>
+
+<h3 id="ex-1-interactivity-as-another-dimension">Ex 1: interactivity as another dimension</h3>
+<ul>
+  <li>Typically you would plot time on the <code>x</code>-axis when display time series data. But, you may want to show more than one dependent variable. In this case, you can use animations to transition between the different time states. So, using animations gives you another dimension to plot the data in.</li>
+  <li>For example, plot of <a href="http://www.google.com/publicdata/explore?ds=d5bncppjof8f9_&amp;amp;ctype=b&amp;amp;strail=false&amp;amp;bcs=d&amp;amp;nselm=s&amp;amp;met_x=sp_dyn_le00_in&amp;amp;scale_x=lin&amp;amp;ind_x=false&amp;amp;met_y=sp_dyn_tfrt_in&amp;amp;scale_y=lin&amp;amp;ind_y=false&amp;amp;met_s=sp_pop_totl&amp;amp;scale_s=lin&amp;amp;ind_s=false&amp;amp;dimp_c=country:region&amp;amp;ifdim=country&amp;amp;tunit=Y&amp;amp;pit=36651600000&amp;amp;ind=false&amp;amp;icfg&amp;amp;iconSize=0.5">life expectancy versus fertility rate for the world's countries</a></li>
+  <li>From <a href="http://www.google.com/publicdata/directory">Google public data sets</a></li>
+  <li>This data set and others available to download from <a href="http://databank.worldbank.org/data/home.aspx">the the world bank data page</a></li>
+  <li>See <a href="example_1.html">Example 1</a> for a demo of this visualization</li>
+</ul>
+
+<p><a href="example_1.html"><image src="images/example_1.png"></image></a></p>
+
+<h3 id="ex-1-code">Ex 1: code</h3>
+
+<h4 id="html"><code>html</code></h4>
+
+<pre><code>    &lt;html&gt;
+      &lt;head&gt;
+        &lt;link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css"&gt;
+        &lt;script src="/javascripts/jquery-2.1.0.js" type="text/javascript"&gt;&lt;/script&gt;
+        &lt;script src="/javascripts/d3.js" type="text/javascript"&gt;&lt;/script&gt;
+        &lt;script src="/javascripts/d3.tip.js" type="text/javascript"&gt;&lt;/script&gt;
+        &lt;script src="/javascripts/life_expectancy_fertility_rate_data.js" type="text/javascript"&gt;&lt;/script&gt;
+        &lt;script src="/javascripts/example_1.js" type="text/javascript"&gt;&lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body class="example_1"&gt;
+        &lt;div id="example" class="data_viz_example"&gt;&lt;/div&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<h4 id="coffeescript"><code>coffeescript</code></h4>
+
+<pre><code>    constructor: -&gt;
+      @margin = {top: 20, right: 20, bottom: 30, left: 50}
+      @width = 960 - @margin.left - @margin.right
+      @height = 500 - @margin.top - @margin.bottom
+  
+      # the data
+      @countries = window.data.countries
+      @years = window.data.years
+
+      @add_graph()
+      @define_scales()
+      @add_year_slider()
+      @add_axes()
+      @add_tooltips()
+  
+      # initialize graph
+      slider = $('#slider')
+      slider.val('1960')
+      slider.change()
+
+    add_graph: -&gt;
+      # create the view
+      @view = d3.select('#example').append('svg')
+        .attr('width', @width + @margin.left + @margin.right)
+        .attr('height', @height + @margin.top + @margin.bottom)
+        .append('g')
+        .attr('transform', "translate(#{@margin.left},#{@margin.top})")
+  
+      # add the circles
+      @circles = @view
+        .selectAll('circle')
+        .data(@countries)
+        .enter()
+        .append('circle')
+        .attr('class', 'circle')
+  
+    define_scales: -&gt;
+      @x_scale = d3.scale.linear().domain([10, 90]).range([0, @width])
+      @y_scale = d3.scale.linear().domain([0.5, 10]).range([@height, 0])
+      # scale r so that area is proportional to population
+      @r_scale = d3.scale.linear().domain(@get_population_min_max().map (x) -&gt; Math.sqrt(x)).range([1, 50])    
+
+    # calculates the min/max population for the data set
+    get_population_min_max: -&gt;
+      all_data = @countries.reduce (prev, curr) -&gt;
+        prev.concat curr.population
+      , []
+      d3.extent(all_data)
+
+    # html5 range inputs are supported by most browsers: http://caniuse.com/#feat=input-range
+    add_year_slider: -&gt;
+      slider = $("&lt;input id='slider' type='range' min='1960' max='2011'/&gt;")
+      curr_val = $("&lt;span id='currentValue'&gt;&lt;/span&gt;")
+      $('#example').append [slider, $("&lt;p id='note'&gt;Year: &lt;/p&gt;").append(curr_val)]
+
+      slider.on 'change', =&gt;
+        val = slider.val()
+        curr_val.html val
+        @view_year @years.indexOf(Number(val))
+
+    # transition the circles to the data at the given year
+    view_year: (i) -&gt;
+      @circles
+        .attr('cx', (d) =&gt; @x_scale(d.life_expectancy[i]))
+        .attr('cy', (d) =&gt; @y_scale(d.fertility_rate[i]))
+        .attr('r', (d) =&gt; @r_scale(Math.sqrt(d.population[i])))
+
+    add_axes: -&gt;
+      @x_axis_view = @view.append('g')
+        .attr('class', 'axis')
+        .attr('transform', "translate(0,#{@height})")
+
+      @y_axis_view = @view.append('g')
+        .attr('class', 'axis')
+  
+      @x_axis = d3.svg.axis().scale(@x_scale).orient('bottom')
+      @x_axis_view.call(@x_axis)
+
+      @y_axis = d3.svg.axis().scale(@y_scale).orient('left')
+      @y_axis_view.call(@y_axis)
+
+      # axes labels
+      $('#example').append [
+        $("&lt;div class='x_label label'&gt;Life Expectancy (years)&lt;/div&gt;")
+        $("&lt;div class='y_label label'&gt;Fertility Rate&lt;/div&gt;") ]
+
+    # appends tooltips to the bars. Uses d3-tip.js
+    # see http://bl.ocks.org/Caged/6476579
+    add_tooltips: -&gt;
+      tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html((d) -&gt; "&lt;span&gt;#{d.country_name}&lt;/span&gt;")
+
+      @view.call(tip)
+
+      @circles
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide)
+</code></pre>
+
+<h4 id="scss"><code>scss</code></h4>
+
+<pre><code>    .data_viz_example {
+      position: absolute;
+      margin-top: 40px;
+      margin-left: 20px;
+  
+      // ticks and labels
+      .axis path, .axis line { 
+        fill: none;
+        stroke: #3F3F3F;
+        shape-rendering: crispEdges;
+      }
+
+      .label {
+        position: absolute;
+      }
+
+      .x_label{
+        top: 500px;
+        left: 470px;
+      }
+
+      .y_label {
+        -webkit-transform-origin: 0;
+        transform-origin: 0;
+        -webkit-transform: translateX(0px) rotate(-90deg);
+        transform: translateX(0px) rotate(-90deg);
+        top: 340px;
+        left: 0px;
+      }    
+    }
+
+    .d3-tip {
+      margin: auto;
+      font-size: 0.8em;
+      font-weight: bold;
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+    }
+
+    // Example 1
+    &amp;.example_1 {
+      position: relative;
+      width: 100%;
+  
+      circle {
+        fill-opacity: 0;  
+        stroke: #202555;
+        stroke-width: 2px;
+      }
+  
+      #slider {
+        position: relative;
+        top: 50px;
+        width: 400px;
+      }
+  
+      #note {
+        position: relative;
+        top: 30px;
+      }
+  
+      .x_label { left: 400px; }
+      .y_label { top: 300px;}
+  
+    }
+</code></pre>
+
+<hr />
+
+<p><a id="example_2"></a></p>
+
+<h3 id="ex-2-animations-can-highlight-comparisons">Ex 2: animations can highlight comparisons</h3>
+
+<p><a href="http://www.nytimes.com/interactive/2009/07/31/business/20080801-metrics-graphic.html?_r=0"><image src="images/time_use_survey.png"></image></a></p>
+
+<p>From NY Times: <a href="http://www.nytimes.com/interactive/2009/07/31/business/20080801-metrics-graphic.html?_r=0">American time use survey</a></p>
+
+<h3 id="provide-comparisons-between-between-groupings-in-the-data">Provide comparisons between between groupings in the data</h3>
+<ul>
+  <li>Bureau of Labor Statistics American Time Use Survey collects Americans' daily activities.</li>
+  <li>The BLS's own presentation consists of many <a href="http://www.bls.gov/tus/charts/home.htm">static charts</a></li>
+  <li><a href="http://www.nytimes.com/interactive/2009/07/31/business/20080801-metrics-graphic.html?_r=0">NYTimes interactive visualization of the survey data</a></li>
+  <li>An area chart is used to represent proportion of time spent on the various activities over the course of the day. </li>
+  <li>This data set can be downloaded at <a href="http://www.bls.gov/tus/data.htm">BLS TUS data</a></li>
+  <li>See <a href="example_2.html">Example 2</a> for a demo of this visualization</li>
+</ul>
+
+<p><a href="example_2.html"><image src="images/example_2.png"></image></a></p>
+
+<h3 id="ex-2-code">Ex 2: code</h3>
+
+<h4 id="coffeescript-excerpt"><code>coffeescript</code> (excerpt)</h4>
+
+<pre><code>    constructor: -&gt;
+      @data = window.data
+      @activity_names = @data[0].map (x) -&gt; x.name
+
+      @margin = {top: 20, right: 20, bottom: 30, left: 50}
+      @width = 960 - @margin.left - @margin.right
+      @height = 500 - @margin.top - @margin.bottom
+  
+      @create_graph()
+      @add_axes()
+      @add_legend()
+      @add_activity_selector()
+      @add_year_selector()
+
+    # area
+    @area = d3.svg.area()
+      .x( (d) =&gt; @x_scale(d.x) )
+      .y0( (d) =&gt; @y_scale(d.y0) )
+      .y1( (d) =&gt; @y_scale(d.y0 + d.y) )
+
+    # use stack function to map the data into form needed for stacked graph
+    @stack = d3.layout.stack().values( (d) -&gt; d.values)
+    data = @stack(@data[0].map (x) -&gt;
+      name: x.name
+      values: x.values.map (d,i) -&gt; {x: i, y: d} )
+
+    # draw the areas
+    @view
+      .selectAll('path')
+      .data(data)
+      .enter()
+      .append('path')
+      .attr('d', (d) =&gt; @area(d.values))
+      .style('fill', (d) =&gt; @color_scale(d.name))
+
+    transition: -&gt;
+      data = @data[@year_select.prop('selectedIndex')]
+      index = @activity_select.prop('selectedIndex')
+
+      data = @stack(data.map (x,i) -&gt;
+        name: x.name
+        values: x.values.map (d,j) -&gt;
+          x: j
+          y: if index is 0 or index-1 is i then d else 0 )
+
+      d3.selectAll('path')
+        .data(data)
+        .transition()
+        .duration(1000)
+        .attr('d', (d) =&gt; @area(d.values))
+</code></pre>
+
+<hr />
+
+<p><a id="example_3"></a></p>
+
+<p><a href="example_3.html"><image src="images/example_3.png"></image></a></p>
+
+<h3 id="ex-3-enhance-users-understanding-of-how-different-views-of-the-data-set-are-related">Ex 3. Enhance user's understanding of how different views of the data set are related</h3>
+<ul>
+  <li>Help the user keep 'situational awareness'</li>
+  <li>Useful when transforming the view of the data by: sorting, rescaling, rearranging, etc.</li>
+  <li>Often times you sort, rescale, rearrange the data to provide a different way of looking at the data. Rather than just cutting to the new arrangement, using a transition clues the user in to the fact that it is the same exact data, just presented differently.</li>
+  <li>See <a href="example_3.html">Example 3</a> for tutorial on how to create this visualization</li>
+</ul>
+
+<p>Each graph binds the data to visual properties in slightly different ways. D3 takes care of animating the graphs between states.</p>
+
+<h4 id="coffeescript-excerpt-1"><code>coffeescript</code> (excerpt)</h4>
+
+<pre><code>    # displays the data in a scatterplot
+    show_scatterplot: -&gt;
+      bar_width = 20
+      x_domain = [44, 85]
+      x_label = 'Life Expectancy'
+      y_domain = [0, 200]
+      y_label = 'Countries'
+
+      @update_scales x_domain, y_domain
+
+      @bars
+        .transition()
+        .duration(1000)
+        .delay((d,i) -&gt; 10*i)
+        .attr('width', bar_width)
+        .attr('x', (d) =&gt; @x_scale(d.life_expectancy)-bar_width/2)
+        .attr('y', (d,i) =&gt; @y_scale(i) - 20)
+        .attr('height', @height - @y_scale(9))
+        .attr('stroke-width', 1)
+        .attr('rx', 10)
+        .attr('ry', 10)
+
+      @update_axes x_label, false, y_label, true
+</code></pre>
+
+<hr />
+
+<p><a href="http://www.garysieling.com/blog/rending-scikit-decision-trees-d3-js"><image src="images/decision_trees.png"></image></a></p>
+
+<p>From <a href="http://www.garysieling.com/blog/rending-scikit-decision-trees-d3-js">interactive visualizations of decision trees</a></p>
+
+<h3 id="ex-4-visual-model-exploration">Ex 4: visual model exploration</h3>
+<ul>
+  <li>Better understanding ML algorithm results</li>
+  <li>Often times ML techniques produce models that are easy to measure the fitness of but more difficult to understand the dynamics of.</li>
+  <li>Interactive data visualizations can help you spot problems in the models that might otherwise be difficult to detect.</li>
+  <li>For example, see <a href="http://www.garysieling.com/blog/rending-scikit-decision-trees-d3-js">interactive visualizations of decision trees using d3.js</a></li>
+</ul>
+
+<hr />
+
+<h3 id="challenges-with-touch-devices">Challenges with touch devices</h3>
+
+<ul>
+  <li>More devices are primarily touch input, and having intuitive touch actions <a href="http://research.microsoft.com/apps/pubs/?id=189011">can be more impactful than just treating touch input like mouse input</a>. Some extra work is typically required to make visualizations touch intuitive. For example, tooltips aren't appropriate.</li>
+  <li>Size of elements - elements intended to be touched should be large enough to do so.</li>
+  <li>Aspect ratio: handling portrait v/s landscape, and the many potential sizes of Android devices.</li>
+  <li>Currently, <code>svg</code> transforms can't take advantage of hardware acceleration on iOS devices (<a href="http://www.sencha.com/blog/the-html5-scorecard-the-good-the-bad-and-the-ugly-in-ios7/">see more here</a>) , which means that transformations often aren't as smooth on iOS tablets/phones as on desktop/laptops.</li>
+  <li><a href="http://en.wikipedia.org/wiki/WebGL">WebGL</a> could move to iOS tablets at some point in the near future, enabling much more powerful rendering capabilities. See <a href="http://threejs.org/">three.js</a> for examples of WebGL.</li>
+</ul>
+
+<hr />
+
+<h3 id="resources-for-learning-d3js">Resources for learning d3.js</h3>
+
+<ul>
+  <li><a href="https://www.dashingd3js.com/table-of-contents">Dashing D3.js tutorial</a></li>
+  <li>How to <a href="http://blog.visual.ly/creating-animations-and-transitions-with-d3-js/">create basic d3 transitions</a></li>
+  <li><a href="http://chimera.labs.oreilly.com/books/1230000000345">Interactive Data Visualization for the Web</a> is a nice introductory book published in 2013.</li>
+  <li>The book's <a href="https://github.com/alignedleft/strata-d3-tutorial">summary slides</a></li>
+  <li><a href="http://christopheviau.com/d3list/gallery.html">d3 gallery</a></li>
+</ul>
+
+<hr />
+
+<h3 id="other-web-based-tools">Other Web-based Tools</h3>
+
+<ul>
+  <li><a href="http://raphaeljs.com">raphael.js</a> is another javascript library for creating svg graphics with animations.</li>
+  <li><a href="http://www.tableausoftware.com/public/">Tableau</a> provides a web-based user interface for uploading and visualizing data.</li>
+  <li><a href="https://plot.ly/">Plotly</a> lets you import and do some analysis and basic visualization on your data.</li>
+  <li><a href="http://rcharts.io/">RCharts</a> is an open-source library for creating javascript data visualizations from R.</li>
+</ul>
+
+<hr />
+
+<h3 id="other-data-visualization-resources">Other data visualization resources</h3>
+
+<ul>
+  <li><a href="http://visualized.com/2014/videos">Visualized 2014 conference videos</a></li>
+  <li><a href="http://www.youtube.com/playlist?list=PLlgxAbM67lYIQ5jid9cXsm72wEpHhAnyb">OpenVis 2013 Conference videos</a> are a great source of recent trends and thoughts in the area
+    <ul>
+      <li><a href="http://www.youtube.com/watch?v=rKcfKePbVl4&amp;amp;feature=share&amp;amp;list=PLlgxAbM67lYIQ5jid9cXsm72wEpHhAnyb">Juan Velasco's (National Geographic) keynote</a></li>
+      <li><a href="http://www.youtube.com/watch?v=ha9LA3rYD9g">Amanda Cox's (NYTimes) keynote</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+  </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-44149839-1', 'mountaintrackapps.com');
+    ga('send', 'pageview');
+  </script>
+</html>
