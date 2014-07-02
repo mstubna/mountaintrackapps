@@ -28,10 +28,10 @@
   </div>
 
   <div class="project row">
-    <div class="small-12 medium-6 columns">
-      <a href="data_viz"><img src='images/data_viz.png'></a>
+    <div class="small-12 medium-5 columns">
+      <a href="data_viz"><img src='images/data_viz_3.png'></a>
     </div>
-    <div class="small-12 medium-6 columns">
+    <div class="small-12 medium-7 columns">
       <h5>How to build interactive data visualizions using d3.js</h5>
       <p>A presentation we gave at the March 2014 Philly Data meetup on creating interactive data visualizations for the web.</p>
       <p>Topics progressed from basic considerations, design, and development using D3.js, Coffeescript, and SASS.</p>
