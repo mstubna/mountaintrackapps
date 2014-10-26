@@ -16,6 +16,22 @@
 
   <div class="project row">
     <div class="small-12 medium-5 columns">
+      <a href="http://workshopmanager.s3-website-us-east-1.amazonaws.com"><img src='images/workshop_manager.png'></a>
+    </div>
+    <div class="small-12 medium-7 columns">
+      <h5>Responsive full-featured calendar with event editing</h5>
+      <p>
+        A recent project involved creating a web app where admin users could create, edit, and save workshop events to an interactive calendar, and other users could register for those events from the same calendar. The calendar needed to work well on mobile devices and so was built using responsive design to be able to adapt to any size device.
+      </p>
+      <p>
+        The user interface code is [open sourced here](https://github.com/mstubna/workshop_manager).
+      </p>
+      <a href="http://workshopmanager.s3-website-us-east-1.amazonaws.com" class="button small radius">See the demo</a>
+    </div>
+  </div>
+
+  <div class="project row">
+    <div class="small-12 medium-5 columns">
       <h5>Interactive data visualizations of Pennsylvania high school performance</h5>
       <p>
         The Pennsylvania Dept of Education provides in-depth metrics about each public school in the state. We created these visualizations to augment the data and identify trends and patterns across the state.
@@ -32,7 +48,7 @@
       <a href="data_viz"><img src='images/data_viz_3.png'></a>
     </div>
     <div class="small-12 medium-7 columns">
-      <h5>How to build interactive data visualizions using d3.js</h5>
+      <h5>How to build interactive data visualizions using D3.js</h5>
       <p>A presentation we gave at the March 2014 Philly Data meetup on creating interactive data visualizations for the web.</p>
       <p>Topics progressed from basic considerations, design, and development using D3.js, Coffeescript, and SASS.</p>
       <a href="data_viz" class="button small radius">View the talk</a>
