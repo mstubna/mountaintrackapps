@@ -5,9 +5,7 @@ var express = require('express');
 var app = express();
 
 // serve the 'build' folder as static assets
-app.configure(function() {  
-  app.use(express.static(__dirname + '/build'));
-});
+app.use(express.static(__dirname + '/build'));
 
 // start the server
 app.listen(port, function() {
