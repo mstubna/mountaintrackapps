@@ -1,8 +1,16 @@
 # mountaintrackapps.com
 
-Website for my work <http://mountaintrackapps.com>
-
 This is a static site deployed to an S3 bucket.
+
+## Hosting
+
+### Staging
+
+<http://mountaintrackappsstaging.s3-website-us-east-1.amazonaws.com/>
+
+### Production
+
+<http://mountaintrackapps.com>
 
 ## Installation
 

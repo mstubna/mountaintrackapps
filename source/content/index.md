@@ -5,12 +5,47 @@
   	</div>
   	<div class="medium-5 small-12 medium-offset-1 columns">
   	  <h4>About</h4>
-  	  <p>Mountain Track Apps is a Philadelphia PA based consultancy specializing in building custom web applications, data analysis, and creating interactive data visualizations.
+  	  <p>I'm Mike Stubna, a Philadelphia PA based freelance software developer. Mountain Track Apps is my one-person consultancy focused on building custom web applications, performing data analysis, and creating interactive data visualizations.
   	</div>
   </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h4>Contact</h4>
+    </div>
+  </div>
+  <div class="row contact">
+    <div class="small-12 columns">
+      <p>Available for contract development work using Ruby on Rails, Node.js, Javascript, and Swift.<br>
+      Email me at <span>mike@stubna.com</span></p>
+    </div>
+  </div>
+
   <div class="row">
     <div class="small-12 columns">
       <h4>Recent Work</h4>
+    </div>
+  </div>
+
+  <div class="project row">
+    <div class="small-12 medium-7 columns">
+      <h5>Event hosting platform</h5>
+      <p>Built a custom Ruby on Rails fitness competition platform for <a href="http://silverlineathletics.com/">Silverline Athletics</a>. This was a fun project that integrated with the <a href="https://www.strava.com/" target="_blank">STRAVA</a> API for login and data tracking, and the Facebook and Twitter APIs for sharing.</p>
+      <a href="https://silverlinechallenges.com/events/marine-corps-marathon-2015/" target="_blank" class="button small radius">Visit site</a>
+    </div>
+    <div class="small-12 medium-5 columns">
+      <a href="https://silverlinechallenges.com/events/marine-corps-marathon-2015/" target="_blank"><img src='images/silverline.png'></a>
+    </div>
+  </div>
+
+  <div class="project row">
+    <div class="small-12 medium-7 columns">
+      <h5>Mobile platform services</h5>
+      <p>Worked on teams developing mobile device backend services and custom web applications for <a href="http://tonicdesign.com/">Tonic Design</a>, a Philadelphia-based design and development agency.</p>
+      <a href="http://tonicdesign.com/" target="_blank" class="button small radius">See examples</a>
+    </div>
+    <div class="small-12 medium-5 columns">
+      <a href="http://tonicdesign.com/" target="_blank"><img src='images/tonic.png'></a>
     </div>
   </div>
 
@@ -39,7 +74,7 @@
     <div class="small-12 medium-7 columns">
       <h5>Responsive full-featured calendar with event editing</h5>
       <p>
-        A recent project involved creating a web app where admin users could create, edit, and save workshop events to an interactive calendar, and other users could register for those events from the same calendar. The calendar needed to work well on mobile devices and so was built using responsive design to be able to adapt to any size device.
+        A recent project involved creating a responsive web app where admin users could create, edit, and save workshop events to an interactive calendar, and other users could register for those events from the same calendar.
       </p>
       <p>
         The user interface code is [open sourced here](https://github.com/mstubna/workshop_manager).
@@ -55,7 +90,7 @@
     <div class="small-12 medium-7 columns">
       <h5>Interactive data visualizations of Pennsylvania high school performance</h5>
       <p>
-        The Pennsylvania Dept of Education provides in-depth metrics about each public school in the state. We created these visualizations to augment the data and identify trends and patterns across the state.
+        The Pennsylvania Dept of Education provides in-depth metrics about each public school in the state. I created these visualizations to augment that data and identify trends and patterns across the state.
       </p>
       <a href="pa_schools" class="button small radius">See the visualizations</a>
     </div>
@@ -66,8 +101,8 @@
 
   <div class="project row">
     <div class="small-12 medium-7 columns">
-      <h5>How to build interactive data visualizions using D3.js</h5>
-      <p>A presentation we gave at the March 2014 Philly Data meetup on creating interactive data visualizations for the web.</p>
+      <h5>How to build interactive data visualizations using D3.js</h5>
+      <p>A presentation given at the March 2014 Philly Data meetup on creating interactive data visualizations for the web.</p>
       <p>Topics progressed from basic considerations, design, and development using D3.js, Coffeescript, and SASS.</p>
       <a href="data_viz" class="button small radius">View the talk</a>
     </div>
@@ -78,9 +113,9 @@
 
   <div class="project row">
     <div class="small-12 medium-7 columns">
-      <h5>Data driven web applications optimized for the iPad</h5>
-      <p>We developed <a href="http://fatiguemeter.com" target="_blank">fatiguemeter.com</a>, a full-stack web application for <a href="http://pulsarinformatics.com" target="_blank">Pulsar Informatics</a>, a fatigue risk management company.</p>
-      <p>Through interactive data visualizations optimized for use on the iPad, this app enables users to manage human fatigue risk in the aviation industry with unparalleled ease and an intuitive user experience.</p>
+      <h5>Data driven web applications</h5>
+      <p>Developed <a href="http://fatiguemeter.com" target="_blank">fatiguemeter.com</a>, a full-stack web application for <a href="http://pulsarinformatics.com" target="_blank">Pulsar Informatics</a>, a fatigue risk management company.</p>
+      <p>Through interactive data visualizations optimized for use in browsers and on the iPad, this app enables users to manage human fatigue risk in the aviation industry with unparalleled ease and an intuitive user experience.</p>
       <a href="http://fatiguemeter.com" target="_blank" class="button small radius">Go to fatiguemeter.com</a>
     </div>
     <div class="small-12 left medium-4 columns">
@@ -91,8 +126,8 @@
   <div class="project row">
     <div class="small-12 medium-7 columns">
       <h5>Rich javascript web applications</h5>
-      <p>We developed several cutting edge interactive web applications for <a href="http://one-k.com">One-K</a>, an entertainment industry creative agency.</p>
-      <p>These applications needed a highly performant and rich user experience across a range of device sizes from mobile to tablet and desktops, which we accomplished through custom javascript development.</p>
+      <p>Developed several cutting edge interactive web applications for <a href="http://one-k.com">One-K</a>, an entertainment industry creative agency.</p>
+      <p>These applications needed a highly performant and rich user experience across a range of device sizes from mobile to tablet and desktops, which was accomplished through custom javascript development.</p>
       <a href="http://work.one-k.com/" target="_blank" class="button small radius">See examples</a>
     </div>
     <div class="small-12 medium-5 columns">
@@ -103,7 +138,7 @@
   <div class="project row">
     <div class="small-12 medium-4 columns">
       <h5>Data mining and visualization contests</h5>
-    	<p>We've applied machine learning and applied mathematics techniques to data mining contests hosted by <a href="http://www.kaggle.com" target="_blank">Kaggle</a> in order to create cutting edge models and data visualizations.</p>
+    	<p>Applied machine learning and applied mathematics techniques to data mining contests hosted by <a href="http://www.kaggle.com" target="_blank">Kaggle</a> in order to create cutting edge models and data visualizations.</p>
       <a href="http://www.kaggle.com/users/50679/mike-stubna" target="_blank" class="button small radius">View Kaggle contests</a>
     </div>
     <div class="small-6 medium-4 columns">
@@ -125,15 +160,4 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="small-12 columns">
-      <h4>Contact</h4>
-    </div>
-  </div>
-  <div class="row footer">
-    <div class="small-12 columns">
-      <p>Available for data analysis and visualization consulting work and custom web application development.</p>
-      <a href="mailto:mike@stubna.com">mike@stubna.com</a>
-    </div>
-  </div>
 </div>
