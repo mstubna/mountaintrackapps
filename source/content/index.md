@@ -5,7 +5,7 @@
   	</div>
   	<div class="medium-5 small-12 medium-offset-1 columns">
   	  <h4>About</h4>
-  	  <p>I'm Mike Stubna, a Philadelphia PA based freelance software developer. Mountain Track Apps is my one-person consultancy focused on building custom web applications, performing data analysis, and creating interactive data visualizations.
+  	  <p>I'm Mike Stubna, a Philadelphia PA based freelance software developer. Mountain Track Apps is my one-person consultancy focused on building custom web and mobile applications, performing data analysis, and creating interactive data visualizations.
   	</div>
   </div>
 
@@ -16,7 +16,7 @@
   </div>
   <div class="row contact">
     <div class="small-12 columns">
-      <p>Available for contract development work using Ruby on Rails, Node.js, Javascript, and Swift.<br>
+      <p>Available for contract development work using Swift, Ruby on Rails, and Node.js.<br>
       Email me at <span>mike@stubna.com</span></p>
     </div>
   </div>
@@ -29,12 +29,24 @@
 
   <div class="project row">
     <div class="small-12 medium-7 columns">
-      <h5>Event hosting platform</h5>
-      <p>Built a custom Ruby on Rails fitness competition platform for <a href="http://silverlineathletics.com/">Silverline Athletics</a>. This was a fun project that integrated with the <a href="https://www.strava.com/" target="_blank">STRAVA</a> API for login and data tracking, and the Facebook and Twitter APIs for sharing.</p>
-      <a href="https://silverlinechallenges.com/events/marine-corps-marathon-2015/" target="_blank" class="button small radius">Visit site</a>
+      <h5>Mobile apps</h5>
+      <p>Designed and developed native mobile apps for both business and gaming. Expert in iMessage apps, CoreData, networking, SpriteKit.</p>
+      <a href="http://wordl.es/" target="_blank" class="button small radius">See example</a>
     </div>
     <div class="small-12 medium-5 columns">
-      <a href="https://silverlinechallenges.com/events/marine-corps-marathon-2015/" target="_blank"><img src='images/silverline.png'></a>
+      <a href="http://wordl.es/" target="_blank">
+        <img src='images/wordles.png'/>
+      </a>
+    </div>
+  </div>
+
+  <div class="project row">
+    <div class="small-12 medium-7 columns">
+      <h5>Event hosting platform</h5>
+      <p>Built a custom Ruby on Rails fitness competition platform for <a href="http://silverlineathletics.com/">Silverline Athletics</a>. This was a fun project that integrated with the <a href="https://www.strava.com/" target="_blank">STRAVA</a> API for login and data tracking, and the Facebook and Twitter APIs for sharing.</p>
+    </div>
+    <div class="small-12 medium-5 columns">
+      <img src='images/silverline.png'>
     </div>
   </div>
 
