@@ -122,3 +122,6 @@ module.exports = ->
 
   @task.registerTask 'deploy', (env) =>
     @task.run "aws_s3:#{env ?= 'staging'}"
+
+  @task.registerTask 'build_deploy', (env) =>
+    @task.run ['build', "deploy:#{env ?= 'staging'}"]

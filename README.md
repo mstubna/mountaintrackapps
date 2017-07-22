@@ -50,11 +50,11 @@ then browse to <http://localhost:8000>
 ## Publish to S3
 
 ````sh
-$ grunt deploy
+$ grunt build_deploy
 ````
 
 or
 
 ````sh
-$ grunt deploy:production
+$ grunt build_deploy:production
 ````

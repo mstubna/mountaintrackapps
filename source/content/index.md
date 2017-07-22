@@ -28,14 +28,20 @@
   </div>
 
   <div class="project row">
-    <div class="small-12 medium-7 columns">
+    <div class="small-12 medium-6 columns">
       <h5>Mobile apps</h5>
-      <p>Designed and developed native mobile apps for both business and gaming. Expert in iMessage apps, CoreData, networking, SpriteKit.</p>
+      <p>Designed and developed native iOS apps for both business and gaming. Expert in building consumer healthcare apps, iMessage apps, HealthKit, CoreData, networking, SpriteKit.</p>
       <a href="http://wordl.es/" target="_blank" class="button small radius">See example</a>
     </div>
-    <div class="small-12 medium-5 columns">
+    <div class="small-4 medium-2 columns">
+      <img src='images/ios_1.png'/>
+    </div>
+    <div class="small-4 medium-2 columns">
+      <img src='images/ios_2.png'/>
+    </div>
+    <div class="small-4 medium-2 columns">
       <a href="http://wordl.es/" target="_blank">
-        <img src='images/wordles.png'/>
+        <img src='images/ios_3.png'/>
       </a>
     </div>
   </div>
@@ -52,7 +58,7 @@
 
   <div class="project row">
     <div class="small-12 medium-7 columns">
-      <h5>Mobile platform services</h5>
+      <h5>Mobile platform services and web applications</h5>
       <p>Worked on teams developing mobile device backend services and custom web applications for <a href="http://tonicdesign.com/">Tonic Design</a>, a Philadelphia-based design and development agency.</p>
       <a href="http://tonicdesign.com/" target="_blank" class="button small radius">See examples</a>
     </div>
