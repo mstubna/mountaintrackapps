@@ -74,9 +74,9 @@
         Simple web app that allows users to create notes and share them with others for collaboration. I built this to get more familiar with:
       </p>
       <ul>
-        <li>A Rails app with PostgreSQL DB</li>
+        <li>A Rails app with MySQL DB</li>
         <li>AJAX forms with Rails</li>
-        <li>Deploying using Amazon OpsWorks</li>
+        <li>Setup to deploy using Amazon OpsWorks or Heroku</li>
       </ul>
       <p>
         View the source code [here](https://github.com/mstubna/list_share_app).
