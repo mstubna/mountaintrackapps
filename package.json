@@ -15,6 +15,7 @@
     "grunt-markdown": "0.7.x",
     "grunt-contrib-compress": "0.13.x",
     "grunt-contrib-copy": "0.8.x",
-    "grunt-aws-s3": "0.14.x"
+    "grunt-aws-s3": "0.14.x",
+    "node-version-assets": "1.2.x"
   }
 }
