@@ -1,5 +1,7 @@
+Version = require 'node-version-assets'
 
 module.exports = ->
+  grunt = this
 
   # display exception stack trace
   @option 'stack', true
@@ -124,4 +126,46 @@ module.exports = ->
     @task.run "aws_s3:#{env ?= 'staging'}"
 
   @task.registerTask 'build_deploy', (env) =>
-    @task.run ['build', "deploy:#{env ?= 'staging'}"]
+    @task.run ['build', 'version_files', "deploy:#{env ?= 'staging'}"]
+
+  @task.registerTask 'version_files', =>
+    @task.run [
+      "version_images_fonts"
+      "version_javascripts"
+      "version_stylesheets"
+    ]
+
+  @task.registerTask 'version_images_fonts', ->
+    assets = grunt.file.expand [
+      'build/images/**/*.*'
+      'build/fonts/*.*'
+    ]
+    grepFiles = grunt.file.expand [
+      'build/stylesheets/**/*.css'
+      'build/javascripts/*.js'
+      'build/index.html'
+    ]
+    version = new Version { assets, grepFiles }
+    version.run @async()
+
+  @task.registerTask 'version_javascripts', ->
+    assets = grunt.file.expand [
+      'build/javascripts/**/*.*'
+      '!build/javascripts/**/*.map'
+      'build/vendor/**/*.js'
+    ]
+    grepFiles = grunt.file.expand [
+      'build/index.html'
+    ]
+    version = new Version { assets, grepFiles }
+    version.run @async()
+
+  @task.registerTask 'version_stylesheets', ->
+    assets = grunt.file.expand [
+      'build/stylesheets/**/*.*'
+      '!build/stylesheets/**/*.map'
+      'build/vendor/**/*.css'
+    ]
+    grepFiles = grunt.file.expand 'build/index.html'
+    version = new Version { assets, grepFiles }
+    version.run @async()
