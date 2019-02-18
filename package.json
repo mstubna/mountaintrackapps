@@ -2,8 +2,7 @@
   "name": "mountaintrackapps",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "express": "4.x",
     "ejs": "2.x",

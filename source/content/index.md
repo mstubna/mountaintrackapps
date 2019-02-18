@@ -5,7 +5,7 @@
   	</div>
   	<div class="medium-5 small-12 medium-offset-1 columns">
   	  <h4>About</h4>
-  	  <p>I'm Mike Stubna, a Philadelphia PA based freelance software developer. Mountain Track Apps is my one-person consultancy focused on building custom web and mobile applications, performing data analysis, and creating interactive data visualizations.
+  	  <p>I'm Mike Stubna, a Philadelphia PA based software developer and consultant. Mountain Track Apps is my one-person consultancy focused on building custom web and mobile applications, performing data analysis, and creating interactive data visualizations.
   	</div>
   </div>
 
@@ -16,7 +16,7 @@
   </div>
   <div class="row contact">
     <div class="small-12 columns">
-      <p>Available for contract development work using Swift, Ruby on Rails, and Node.js.<br>
+      <p>Available for contract development work in Node.js, Ruby on Rails, and Swift.<br>
       Email me at <span>mike@stubna.com</span></p>
     </div>
   </div>
@@ -24,6 +24,27 @@
   <div class="row">
     <div class="small-12 columns">
       <h4>Recent Work</h4>
+    </div>
+  </div>
+
+  <div class="project row">
+    <div class="small-12 medium-7 columns">
+      <h5>Custom web applications</h5>
+      <p>Worked on teams developing custom Node.js, RoR, and React web apps for <a href="https://www.promptworks.com/">Promptworks</a>, a Philadelphia-based custom software consultancy.</p>
+      <a href="https://www.promptworks.com/" target="_blank" class="button small radius">See examples</a>
+    </div>
+    <div class="small-12 medium-5 columns">
+      <a href="https://www.promptworks.com/" target="_blank"><img src='images/promptworks.png'></a>
+    </div>
+  </div>
+
+  <div class="project row">
+    <div class="small-12 medium-8 columns">
+      <h5>Data-driven healthcare applications</h5>
+      <p>Designed and developed a custom patient care web app for <a href="https://www.camdenhealth.org/">Camden Coalition</a>, a Newark NJ non-profit. Led the project through requirements gathering, design, development, and user prototpe testing.</p>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <a href="https://www.camdenhealth.org/" target="_blank"><img src='images/timelines_app.png'></a>
     </div>
   </div>
 
@@ -49,7 +70,7 @@
   <div class="project row">
     <div class="small-12 medium-7 columns">
       <h5>Event hosting platform</h5>
-      <p>Built a custom Ruby on Rails fitness competition platform for <a href="http://silverlineathletics.com/">Silverline Athletics</a>. This was a fun project that integrated with the <a href="https://www.strava.com/" target="_blank">STRAVA</a> API for login and data tracking, and the Facebook and Twitter APIs for sharing.</p>
+      <p>Built a custom Ruby on Rails fitness competition platform for <a href="https://www.silverlineathletics.com">Silverline Athletics</a>. This was a fun project that integrated with the <a href="https://www.strava.com/" target="_blank">STRAVA</a> API for login and data tracking, and the Facebook and Twitter APIs for sharing.</p>
     </div>
     <div class="small-12 medium-5 columns">
       <img src='images/silverline.png'>
@@ -59,7 +80,7 @@
   <div class="project row">
     <div class="small-12 medium-7 columns">
       <h5>Mobile platform services and web applications</h5>
-      <p>Worked on teams developing mobile device backend services and custom web applications for <a href="http://tonicdesign.com/">Tonic Design</a>, a Philadelphia-based design and development agency.</p>
+      <p>Worked on teams developing mobile device backend services, custom web applications, and React Native apps for <a href="http://tonicdesign.com/">Tonic Design</a>, a Philadelphia-based design and development agency.</p>
       <a href="http://tonicdesign.com/" target="_blank" class="button small radius">See examples</a>
     </div>
     <div class="small-12 medium-5 columns">
@@ -132,24 +153,23 @@
   <div class="project row">
     <div class="small-12 medium-7 columns">
       <h5>Data driven web applications</h5>
-      <p>Developed <a href="http://fatiguemeter.com" target="_blank">fatiguemeter.com</a>, a full-stack web application for <a href="http://pulsarinformatics.com" target="_blank">Pulsar Informatics</a>, a fatigue risk management company.</p>
+      <p>Developed Aviation Fatigue Meter, a full-stack web application for <a href="http://pulsarinformatics.com" target="_blank">Pulsar Informatics</a>, a fatigue risk management company.</p>
       <p>Through interactive data visualizations optimized for use in browsers and on the iPad, this app enables users to manage human fatigue risk in the aviation industry with unparalleled ease and an intuitive user experience.</p>
-      <a href="http://fatiguemeter.com" target="_blank" class="button small radius">Go to fatiguemeter.com</a>
+      <a href="https://pulsarinformatics.com/products/aviation" target="_blank" class="button small radius">View marketing site</a>
     </div>
     <div class="small-12 left medium-4 columns">
-      <a href="http://fatiguemeter.com" target="_blank"><img src='images/fatigue_meter.png'></a>
+      <a href="https://pulsarinformatics.com/products/aviation" target="_blank"><img src='images/fatigue_meter.png'></a>
     </div>
   </div>
 
   <div class="project row">
     <div class="small-12 medium-7 columns">
       <h5>Rich javascript web applications</h5>
-      <p>Developed several cutting edge interactive web applications for <a href="http://one-k.com">One-K</a>, an entertainment industry creative agency.</p>
+      <p>Developed several cutting edge interactive web applications for One-K, an entertainment industry creative agency.</p>
       <p>These applications needed a highly performant and rich user experience across a range of device sizes from mobile to tablet and desktops, which was accomplished through custom javascript development.</p>
-      <a href="http://work.one-k.com/" target="_blank" class="button small radius">See examples</a>
     </div>
     <div class="small-12 medium-5 columns">
-      <a href="http://http://work.one-k.com/" target="_blank"><img src='images/one_k_mos.png'></a>
+      <img src='images/one_k_mos.png'>
     </div>
   </div>
 
