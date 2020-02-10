@@ -5,7 +5,7 @@
   	</div>
   	<div class="medium-5 small-12 medium-offset-1 columns">
   	  <h4>About</h4>
-  	  <p>I'm Mike Stubna, a Philadelphia PA based software developer and consultant. Mountain Track Apps is my one-person consultancy focused on building custom web and mobile applications, performing data analysis, and creating interactive data visualizations.
+  	  <p>I'm Mike Stubna, a Philadelphia PA based software developer and consultant. Mountain Track Apps is my one-person consultancy focused on building custom web and mobile applications, performing data analysis, and building predictive Machine Learning models for startups and established businesses.
   	</div>
   </div>
 
@@ -16,7 +16,7 @@
   </div>
   <div class="row contact">
     <div class="small-12 columns">
-      <p>Available for contract development work in Node.js, Ruby on Rails, and Swift.<br>
+      <p>Available for contract development work in Javascript & Node.js, Ruby on Rails, Swift, and Machine Learning in Python.<br>
       Email me at <span>mike@stubna.com</span></p>
     </div>
   </div>
@@ -28,13 +28,19 @@
   </div>
 
   <div class="project row">
-    <div class="small-12 medium-7 columns">
-      <h5>Custom web applications</h5>
-      <p>Worked on teams developing custom Node.js, RoR, and React web apps for <a href="https://www.promptworks.com/">Promptworks</a>, a Philadelphia-based custom software consultancy.</p>
-      <a href="https://www.promptworks.com/" target="_blank" class="button small radius">See examples</a>
+    <div class="small-12 medium-6 columns">
+      <h5>CMS-AI Challenge</h5>
+      <p>Led the technical development of ML algorithms for predicting and visualizing risk in Medicare beneficiary data in one of 25 teams selected for Stage 1 of the CMS-AI Challenge. Read more about the <a href="https://innovation.cms.gov/initiatives/artificial-intelligence-health-outcomes-challenge/">CMS-AI Challenge</a>.</p>
     </div>
-    <div class="small-12 medium-5 columns">
-      <a href="https://www.promptworks.com/" target="_blank"><img src='images/promptworks.png'></a>
+    <div class="small-8 medium-4 columns">
+      <a href='images/cms_ai_1.png' target='_blank'>
+        <img src='images/cms_ai_1.png'>
+      </a>
+    </div>
+    <div class="small-4 medium-2 columns">
+      <a href='images/cms_ai_2.png' target='_blank'>
+        <img src='images/cms_ai_2.png' style='padding-top:3px;'>
+      </a>
     </div>
   </div>
 
@@ -79,6 +85,17 @@
 
   <div class="project row">
     <div class="small-12 medium-7 columns">
+      <h5>Custom web applications</h5>
+      <p>Worked on teams developing custom Node.js, RoR, and React web apps for <a href="https://www.promptworks.com/">Promptworks</a>, a Philadelphia-based custom software consultancy.</p>
+      <a href="https://www.promptworks.com/" target="_blank" class="button small radius">See examples</a>
+    </div>
+    <div class="small-12 medium-5 columns">
+      <a href="https://www.promptworks.com/" target="_blank"><img src='images/promptworks.png'></a>
+    </div>
+  </div>
+
+  <div class="project row">
+    <div class="small-12 medium-7 columns">
       <h5>Mobile platform services and web applications</h5>
       <p>Worked on teams developing mobile device backend services, custom web applications, and React Native apps for <a href="http://tonicdesign.com/">Tonic Design</a>, a Philadelphia-based design and development agency.</p>
       <a href="http://tonicdesign.com/" target="_blank" class="button small radius">See examples</a>
@@ -100,9 +117,8 @@
         <li>Setup to deploy using Amazon OpsWorks or Heroku</li>
       </ul>
       <p>
-        View the source code [here](https://github.com/mstubna/list_share_app).
+        The app is [open sourced here](https://github.com/mstubna/list_share_app).
       </p>
-      <a href="http://sharemynotes.co" class="button small radius">View the app</a>
     </div>
     <div class="small-12 medium-5 columns">
       <a href="http://sharemynotes.co"><img src='images/note_share_app.png'></a>
